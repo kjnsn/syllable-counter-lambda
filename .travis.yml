@@ -3,5 +3,6 @@ python:
   "3.6"
 install:
   - make setup
+  - make update_nltk
 script:
   - make test

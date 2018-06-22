@@ -1,7 +1,7 @@
-package: setup
+package: setup update_nltk
 	zip -r9 package.zip .
 
-setup: update_nltk
+setup:
 	pip install -t . -r requirements.txt
 
 update_nltk:
