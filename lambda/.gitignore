@@ -111,3 +111,8 @@ package.zip
 pyphen
 pyphen.py
 .vscode
+.idea
+six.py
+textblob
+nltk
+nltk_data
