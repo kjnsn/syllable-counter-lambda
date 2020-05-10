@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+autopep8 = "*"
+
+[packages]
+textblob = "==0.15.1"
+pyphen = "==0.9.4"
+flask = "*"
+gunicorn = "*"
+
+[requires]
+python_version = "3.7"
