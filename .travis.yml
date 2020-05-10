@@ -1,10 +1,7 @@
 language: python
-sudo: true
 python:
   "3.7"
 install:
-  - pip install pipenv
-  - make setup
   - make update_nltk
 script:
   - make test
