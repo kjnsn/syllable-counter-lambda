@@ -12,6 +12,7 @@ textblob = "==0.15.1"
 pyphen = "==0.9.4"
 flask = "*"
 gunicorn = "*"
+six = "*"
 
 [requires]
 python_version = "3.7"

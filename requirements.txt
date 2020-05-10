@@ -8,7 +8,8 @@ joblib==0.14.1
 markupsafe==1.1.1
 nltk==3.5
 pyphen==0.9.4
-regex==2020.4.4
+regex==2020.5.7
+six==1.14.0
 textblob==0.15.1
 tqdm==4.46.0
 werkzeug==1.0.1
