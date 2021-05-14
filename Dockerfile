@@ -1,6 +1,6 @@
 # Use the official lightweight Python image.
 # https://hub.docker.com/_/python
-FROM python:3.7
+FROM python:3.9-slim
 
 # Copy local code to the container image.
 ENV APP_HOME /app
@@ -10,7 +10,9 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . ./
-RUN mkdir -p /var/task && cp -r nltk_data /var/task/nltk_data
+RUN mkdir -p /var/task && mv nltk_data /var/task/nltk_data
+
+EXPOSE 8080
 
 # Run the web service on container startup. Here we use the gunicorn
 # webserver, with one worker process and 8 threads.

@@ -114,5 +114,3 @@ pyphen.py
 .idea
 six.py
 textblob
-nltk
-nltk_data
