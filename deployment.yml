@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: syllable-counter
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: syllable-counter
+  template:
+    metadata:
+      labels:
+        app: syllable-counter
+    spec:
+      containers:
+      - name: syllable-counter
+        image: gcr.io/PROJECT_ID/REPOSITORY/IMAGE:TAG
+        ports:
+        - containerPort: 8080
