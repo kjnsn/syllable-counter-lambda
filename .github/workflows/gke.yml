@@ -20,6 +20,7 @@ env:
   GKE_ZONE: asia-southeast1-a
   GAR_LOCATION: australia-southeast1
   DEPLOYMENT_NAME: syllable-counter
+  REPOSITORY: gke
   IMAGE: syllable-counter
 
 jobs:
