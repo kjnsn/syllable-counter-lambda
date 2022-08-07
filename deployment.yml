@@ -7,6 +7,11 @@ spec:
   selector:
     matchLabels:
       app: syllable-counter
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 10
   template:
     metadata:
       labels:
